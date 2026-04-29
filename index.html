@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 10 Modern Wall Art Ideas | Elevate Your Living Room</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark: #0d1117;
+    --dark2: #151c26;
+    --dark3: #1c2535;
+    --gold: #c9a84c;
+    --gold-light: #e2c47a;
+    --gold-dim: rgba(201,168,76,0.15);
+    --white: #ffffff;
+    --off-white: #f0ead8;
+    --muted: #8a96a8;
+    --card-bg: #141b27;
+    --border: rgba(201,168,76,0.2);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',sans-serif; background:var(--dark); color:var(--white); line-height:1.7; }
+
+  /* NAV */
+  nav {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 60px;
+    background:rgba(13,17,23,0.95);
+    border-bottom:1px solid var(--border);
+    position:sticky; top:0; z-index:100;
+    backdrop-filter:blur(10px);
+  }
+  .logo { font-family:'Playfair Display',serif; font-size:22px; color:var(--gold); letter-spacing:0.05em; }
+  .logo span { color:var(--white); }
+  .nav-badge {
+    font-size:11px; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--gold); border:1px solid var(--gold);
+    padding:6px 18px; border-radius:2px; font-weight:500;
+  }
+
+  /* HERO */
+  .hero {
+    position:relative; overflow:hidden;
+    background: linear-gradient(135deg, #0d1117 0%, #151c26 40%, #1a2235 70%, #0d1117 100%);
+    padding:100px 60px 90px;
+    text-align:center;
+  }
+  .hero::before {
+    content:''; position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    width:700px; height:400px;
+    background:radial-gradient(ellipse, rgba(201,168,76,0.08) 0%, transparent 65%);
+    pointer-events:none;
+  }
+  .hero-tag {
+    display:inline-flex; align-items:center; gap:10px;
+    font-size:11px; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:28px;
+  }
+  .hero-tag::before, .hero-tag::after {
+    content:''; display:block; width:40px; height:1px; background:var(--gold); opacity:0.5;
+  }
+  .hero h1 {
+    font-family:'Playfair Display',serif;
+    font-size:clamp(32px,5vw,58px);
+    font-weight:700; line-height:1.15;
+    color:var(--white); max-width:750px; margin:0 auto 20px;
+  }
+  .hero h1 em { color:var(--gold); font-style:italic; }
+  .hero p { color:var(--muted); font-size:16px; font-weight:300; max-width:540px; margin:0 auto 40px; }
+  .hero-meta {
+    display:flex; justify-content:center; gap:40px; flex-wrap:wrap;
+    font-size:12px; color:var(--muted); letter-spacing:0.06em;
+  }
+  .hero-meta span { display:flex; align-items:center; gap:8px; }
+  .hero-meta .dot { width:4px; height:4px; border-radius:50%; background:var(--gold); }
+
+  /* GOLD DIVIDER */
+  .gold-line {
+    display:flex; align-items:center; gap:16px;
+    padding:40px 60px 0; max-width:960px; margin:0 auto;
+  }
+  .gold-line::before, .gold-line::after {
+    content:''; flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .gold-line-icon { color:var(--gold); font-size:18px; }
+
+  /* INTRO */
+  .intro { max-width:760px; margin:0 auto; padding:40px 60px 60px; text-align:center; }
+  .intro p { color:var(--muted); font-size:15.5px; font-weight:300; line-height:1.85; }
+
+  /* SECTION TITLE */
+  .section-label {
+    text-align:center; margin-bottom:56px;
+  }
+  .section-label .pre {
+    font-size:11px; letter-spacing:0.25em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:12px; display:block;
+  }
+  .section-label h2 {
+    font-family:'Playfair Display',serif; font-size:clamp(26px,3.5vw,38px);
+    font-weight:700; color:var(--white);
+  }
+
+  /* ARTICLES GRID */
+  .articles-wrap { max-width:1100px; margin:0 auto; padding:0 40px 80px; }
+
+  /* FEATURED CARD (first item) */
+  .art-featured {
+    display:grid; grid-template-columns:1fr 1fr;
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:6px;
+    overflow:hidden;
+    margin-bottom:32px;
+  }
+  .art-featured .img-side {
+    background: linear-gradient(135deg, #1c2535, #243040);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:48px; position:relative; min-height:340px;
+  }
+  .art-featured .img-side .big-num {
+    font-family:'Playfair Display',serif;
+    font-size:120px; font-weight:700; font-style:italic;
+    color:rgba(201,168,76,0.08); position:absolute;
+    top:50%; left:50%; transform:translate(-50%,-50%);
+    line-height:1; user-select:none;
+  }
+  .art-featured .img-side .num-badge {
+    font-size:11px; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--gold); background:var(--gold-dim);
+    border:1px solid var(--border); padding:6px 18px; border-radius:2px;
+    position:relative; z-index:2;
+  }
+  .art-featured .img-side .art-icon {
+    font-size:64px; margin:20px 0 12px; position:relative; z-index:2;
+  }
+  .art-featured .text-side { padding:48px; display:flex; flex-direction:column; justify-content:center; }
+  .art-featured .text-side h2 {
+    font-family:'Playfair Display',serif; font-size:28px; font-weight:700;
+    color:var(--white); margin-bottom:16px; line-height:1.3;
+  }
+
+  /* GRID CARDS */
+  .arts-grid {
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+    margin-bottom:32px;
+  }
+  .art-card {
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:6px; overflow:hidden;
+    transition:border-color 0.3s, transform 0.3s;
+    display:flex; flex-direction:column;
+  }
+  .art-card:hover { border-color:var(--gold); transform:translateY(-4px); }
+  .art-card .card-top {
+    padding:32px 28px 20px;
+    display:flex; align-items:flex-start; gap:16px;
+    position:relative;
+  }
+  .art-card .card-icon { font-size:32px; flex-shrink:0; }
+  .art-card .card-num {
+    position:absolute; top:20px; right:24px;
+    font-family:'Playfair Display',serif;
+    font-size:38px; font-style:italic; font-weight:700;
+    color:rgba(201,168,76,0.1); line-height:1;
+  }
+  .art-card .card-top h3 {
+    font-family:'Playfair Display',serif; font-size:18px;
+    font-weight:600; color:var(--white); line-height:1.3;
+  }
+  .art-card .card-body { padding:0 28px 24px; flex:1; }
+  .art-card .card-body p {
+    color:var(--muted); font-size:13.5px; font-weight:300; line-height:1.75; margin-bottom:16px;
+  }
+  .art-card .card-footer {
+    padding:16px 28px;
+    border-top:1px solid rgba(201,168,76,0.12);
+    display:flex; align-items:center; justify-content:space-between;
+  }
+
+  /* WIDE CARD (spans 2 cols) */
+  .art-wide {
+    background:var(--card-bg); border:1px solid var(--border);
+    border-radius:6px; padding:36px 40px;
+    display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;
+    margin-bottom:32px;
+  }
+  .art-wide h3 {
+    font-family:'Playfair Display',serif; font-size:24px; font-weight:700;
+    color:var(--white); margin-bottom:14px;
+  }
+
+  /* TAGS */
+  .tag { font-size:10px; letter-spacing:0.12em; text-transform:uppercase;
+    padding:3px 10px; border-radius:2px; font-weight:500; }
+  .tag-gold { background:rgba(201,168,76,0.12); color:var(--gold); border:1px solid rgba(201,168,76,0.3); }
+  .tag-blue { background:rgba(80,140,200,0.1); color:#7ab0d8; border:1px solid rgba(80,140,200,0.25); }
+  .tag-green { background:rgba(80,170,120,0.1); color:#72c49a; border:1px solid rgba(80,170,120,0.25); }
+  .tag-row { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+
+  /* TIP */
+  .tip {
+    background:rgba(201,168,76,0.05); border-left:2px solid var(--gold);
+    padding:12px 16px; border-radius:0 4px 4px 0; margin:12px 0 16px;
+  }
+  .tip-label { font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:4px; font-weight:600; }
+  .tip p { font-size:12.5px !important; color:#7a8898 !important; margin:0 !important; }
+
+  /* CTA BUTTON */
+  .cta-btn {
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--gold); color:var(--dark);
+    font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase;
+    padding:11px 22px; border-radius:2px; text-decoration:none; border:none; cursor:pointer;
+    transition:background 0.2s;
+  }
+  .cta-btn:hover { background:var(--gold-light); }
+  .cta-btn-outline {
+    display:inline-flex; align-items:center; gap:8px;
+    background:transparent; color:var(--gold);
+    font-size:11px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase;
+    padding:10px 22px; border-radius:2px; border:1px solid var(--gold);
+    text-decoration:none; cursor:pointer; transition:all 0.2s;
+  }
+  .cta-btn-outline:hover { background:var(--gold); color:var(--dark); }
+
+  /* STRIP */
+  .strip { width:100%; height:3px; border-radius:2px; margin-bottom:16px; }
+
+  /* STATS BAR */
+  .stats-bar {
+    background:var(--dark2); border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+    padding:40px 60px; display:flex; justify-content:center; gap:80px; flex-wrap:wrap;
+    margin-bottom:80px;
+  }
+  .stat { text-align:center; }
+  .stat .num { font-family:'Playfair Display',serif; font-size:36px; font-weight:700; color:var(--gold); }
+  .stat .lbl { font-size:12px; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; margin-top:4px; }
+
+  /* CLOSING CTA */
+  .closing {
+    max-width:1100px; margin:0 auto 80px; padding:0 40px;
+  }
+  .closing-inner {
+    background: linear-gradient(135deg, #1c2535, #243040);
+    border:1px solid var(--border); border-radius:6px;
+    padding:60px; text-align:center; position:relative; overflow:hidden;
+  }
+  .closing-inner::before {
+    content:''; position:absolute; top:-80px; right:-80px;
+    width:300px; height:300px;
+    background:radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 65%);
+    pointer-events:none;
+  }
+  .closing-inner h2 {
+    font-family:'Playfair Display',serif; font-size:36px; font-weight:700;
+    color:var(--white); margin-bottom:14px;
+  }
+  .closing-inner h2 em { color:var(--gold); font-style:italic; }
+  .closing-inner p { color:var(--muted); font-size:15px; font-weight:300; max-width:480px; margin:0 auto 32px; }
+  .closing-btns { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+
+  /* FOOTER */
+  footer {
+    background:var(--dark2); border-top:1px solid var(--border);
+    padding:32px 60px; text-align:center;
+  }
+  footer p { font-size:12px; color:var(--muted); }
+  footer span { color:var(--gold); }
+
+  /* RESPONSIVE */
+  @media(max-width:900px) {
+    nav { padding:16px 24px; }
+    .hero { padding:70px 24px 60px; }
+    .intro { padding:32px 24px 48px; }
+    .articles-wrap { padding:0 20px 60px; }
+    .art-featured { grid-template-columns:1fr; }
+    .art-featured .img-side { min-height:180px; }
+    .arts-grid { grid-template-columns:1fr; }
+    .art-wide { grid-template-columns:1fr; gap:20px; padding:28px 24px; }
+    .stats-bar { padding:32px 24px; gap:40px; }
+    .closing { padding:0 20px; }
+    .closing-inner { padding:40px 24px; }
+    .gold-line { padding:32px 24px 0; }
+    footer { padding:24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Wall<span>Art</span> Guide</div>
+  <div class="nav-badge">Amazon Picks 2026</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">Interior Design · Curated Collection</div>
+  <h1>Top 10 Modern Wall Art Ideas to <em>Elevate</em> Your Living Room</h1>
+  <p>Transform bare walls into curated masterpieces — handpicked styles with the best Amazon finds for every taste and budget.</p>
+  <div class="hero-meta">
+    <span><span class="dot"></span> Updated 2026</span>
+    <span><span class="dot"></span> 8 Min Read</span>
+    <span><span class="dot"></span> 10 Amazon Picks</span>
+    <span><span class="dot"></span> Expert Tips Included</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat"><div class="num">10</div><div class="lbl">Art Styles</div></div>
+  <div class="stat"><div class="num">100+</div><div class="lbl">Amazon Products</div></div>
+  <div class="stat"><div class="num">50K+</div><div class="lbl">Happy Homes</div></div>
+  <div class="stat"><div class="num">5★</div><div class="lbl">Avg Rating</div></div>
+</div>
+
+<!-- INTRO -->
+<div class="gold-line"><span class="gold-line-icon">✦</span></div>
+<div class="intro">
+  <p>Your living room walls are a blank canvas — and what you hang on them can completely transform the energy of the space. Whether you lean into bold geometry, serene botanicals, or curated gallery walls, modern wall art has never been more accessible or beautiful. Here are 10 stunning ideas, each with top-rated Amazon products to bring the look home.</p>
+</div>
+
+<!-- ARTICLES -->
+<div class="articles-wrap">
+
+  <div class="section-label">
+    <span class="pre">Our Top Picks</span>
+    <h2>10 Wall Art Ideas That Actually Work</h2>
+  </div>
+
+  <!-- 01 FEATURED -->
+  <div class="art-featured">
+    <div class="img-side">
+      <div class="big-num">01</div>
+      <div class="num-badge">No. 01 · Bestseller</div>
+      <div class="art-icon">🖼️</div>
+      <div style="font-family:'Playfair Display',serif;font-size:22px;font-style:italic;color:rgba(255,255,255,0.5);position:relative;z-index:2;">Abstract Canvas</div>
+    </div>
+    <div class="text-side">
+      <div class="strip" style="background:linear-gradient(90deg,#c9a84c,transparent);"></div>
+      <div class="tag-row"><span class="tag tag-gold">Bestseller</span><span class="tag tag-blue">Bold Statement</span></div>
+      <h2>Abstract Canvas Prints</h2>
+      <p style="color:var(--muted);font-size:14.5px;font-weight:300;margin-bottom:18px;line-height:1.8;">Abstract art remains the cornerstone of modern interiors. Large-scale canvas prints with sweeping brushstrokes, muted earth tones, or vibrant splashes command attention instantly. Look for triptych sets or oversized single panels in 40"×60" for maximum drama on your accent wall.</p>
+      <div class="tip"><div class="tip-label">Pro Tip</div><p>Hang abstract art at eye level — the center should sit at 57"–60" from the floor, gallery style.</p></div>
+      <a class="cta-btn" href="https://www.amazon.com/s?k=abstract+canvas+wall+art+living+room" target="_blank">Shop on Amazon →</a>
+    </div>
+  </div>
+
+  <!-- 3-CARD GRID -->
+  <div class="arts-grid">
+
+    <div class="art-card">
+      <div class="card-top">
+        <div class="card-icon">🌿</div>
+        <div>
+          <div class="tag-row"><span class="tag tag-green">Trending 2026</span></div>
+          <h3>Botanical & Nature Prints</h3>
+        </div>
+        <div class="card-num">02</div>
+      </div>
+      <div class="card-body">
+        <div class="strip" style="background:linear-gradient(90deg,#72c49a,transparent);"></div>
+        <p>Lush botanical illustrations — monstera leaves, tropical palms, pressed flowers — in matte black or natural wood frames add timeless organic warmth. Sets of 3–6 prints in a grid are especially popular.</p>
+        <div class="tip"><div class="tip-label">Pro Tip</div><p>One large anchor piece flanked by smaller prints creates natural depth.</p></div>
+      </div>
+      <div class="card-footer">
+        <a class="cta-btn-outline" href="https://www.amazon.com/s?k=botanical+wall+art+prints+framed+living+room" target="_blank">Shop Now →</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <div class="card-top">
+        <div class="card-icon">⚙️</div>
+        <div>
+          <div class="tag-row"><span class="tag tag-gold">Luxury Look</span></div>
+          <h3>Metal Wall Sculptures</h3>
+        </div>
+        <div class="card-num">03</div>
+      </div>
+      <div class="card-body">
+        <div class="strip" style="background:linear-gradient(90deg,#c9a84c,transparent);"></div>
+        <p>Laser-cut geometric patterns, abstract sun sculptures, interlocking circular designs in gold, bronze, or black matte finish cast beautiful shadows throughout the day — perfect above sofas.</p>
+        <div class="tip"><div class="tip-label">Pro Tip</div><p>Choose brushed gold or matte black — avoid chrome, which can feel dated.</p></div>
+      </div>
+      <div class="card-footer">
+        <a class="cta-btn-outline" href="https://www.amazon.com/s?k=metal+wall+art+sculpture+living+room+modern" target="_blank">Shop Now →</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <div class="card-top">
+        <div class="card-icon">✏️</div>
+        <div>
+          <div class="tag-row"><span class="tag tag-blue">Clean & Modern</span></div>
+          <h3>Minimalist Line Art</h3>
+        </div>
+        <div class="card-num">04</div>
+      </div>
+      <div class="card-body">
+        <div class="strip" style="background:linear-gradient(90deg,#7ab0d8,transparent);"></div>
+        <p>Single-line drawings and contour illustrations of faces, figures, and architecture in black ink on cream backgrounds look stunning in slim frames. Perfect for Scandinavian and Japandi spaces.</p>
+        <div class="tip"><div class="tip-label">Pro Tip</div><p>Odd numbers of frames feel more natural — try 3 or 5 pieces.</p></div>
+      </div>
+      <div class="card-footer">
+        <a class="cta-btn-outline" href="https://www.amazon.com/s?k=minimalist+line+art+print+framed+modern" target="_blank">Shop Now →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- WIDE CARD 05 -->
+  <div class="art-wide">
+    <div>
+      <div class="strip" style="background:linear-gradient(90deg,#c9a84c,transparent);"></div>
+      <div class="tag-row"><span class="tag tag-gold">No. 05</span><span class="tag tag-green">Boho Luxe</span></div>
+      <h3>Woven Tapestry & Macramé</h3>
+      <p style="color:var(--muted);font-size:14px;font-weight:300;margin-bottom:18px;line-height:1.8;">Textile wall hangings add warmth and acoustic softness that hard-surface art can't match. Handwoven tapestries with earthy tones and geometric patterns are especially beautiful in boho-modern or warm contemporary interiors. Large-scale macramé works as a dramatic focal point in any space.</p>
+      <div class="tip"><div class="tip-label">Pro Tip</div><p>Layer a woven hanging over a painted wall — the contrast between texture and flat color creates visual richness.</p></div>
+    </div>
+    <div style="text-align:center;">
+      <div style="font-size:80px;margin-bottom:24px;">🧶</div>
+      <a class="cta-btn" href="https://www.amazon.com/s?k=woven+tapestry+wall+hanging+boho+living+room" target="_blank">Shop Tapestry on Amazon →</a>
+    </div>
+  </div>
+
+  <!-- 3-CARD GRID ROW 2 -->
+  <div class="arts-grid">
+
+    <div class="art-card">
+      <div class="card-top">
+        <div class="card-icon">🖼</div>
+        <div>
+          <div class="tag-row"><span class="tag tag-blue">Curated Look</span></div>
+          <h3>Gallery Wall Sets</h3>
+        </div>
+        <div class="card-num">06</div>
+      </div>
+      <div class="card-body">
+        <div class="strip" style="background:linear-gradient(90deg,#7ab0d8,transparent);"></div>
+        <p>Pre-curated sets of 7–12 pieces in matching frames remove the guesswork. Mix art prints, photo frames, mirrors, and small shelves for a dimensional, lived-in feel that tells your story.</p>
+        <div class="tip"><div class="tip-label">Pro Tip</div><p>Lay the arrangement on the floor and photograph it before any nails go in.</p></div>
+      </div>
+      <div class="card-footer">
+        <a class="cta-btn-outline" href="https://www.amazon.com/s?k=gallery+wall+set+frames+art+prints+living+room" target="_blank">Shop Now →</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <div class="card-top">
+        <div class="card-icon">🗺️</div>
+        <div>
+          <div class="tag-row"><span class="tag tag-gold">Conversation Starter</span></div>
+          <h3>City Map Prints</h3>
+        </div>
+        <div class="card-num">07</div>
+      </div>
+      <div class="card-body">
+        <div class="strip" style="background:linear-gradient(90deg,#c9a84c,transparent);"></div>
+        <p>Architectural city maps, vintage travel posters, and topographic prints are endlessly stylish. A framed watercolor map of your favorite city or a push-pin world map feels personal and sophisticated.</p>
+        <div class="tip"><div class="tip-label">Pro Tip</div><p>Match the map's color palette to your existing wall color for a cohesive look.</p></div>
+      </div>
+      <div class="card-footer">
+        <a class="cta-btn-outline" href="https://www.amazon.com/s?k=framed+city+map+wall+art+print+modern" target="_blank">Shop Now →</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <div class="card-top">
+        <div class="card-icon">🪞</div>
+        <div>
+          <div class="tag-row"><span class="tag tag-green">Space Amplifier</span></div>
+          <h3>Oversized Mirrors</h3>
+        </div>
+        <div class="card-num">08</div>
+      </div>
+      <div class="card-body">
+        <div class="strip" style="background:linear-gradient(90deg,#72c49a,transparent);"></div>
+        <p>A strategically placed oversized mirror bounces light and makes rooms feel twice as large. Arched full-length mirrors, sunburst, and organic-edge mirrors are the most pinned interior looks of 2026.</p>
+        <div class="tip"><div class="tip-label">Pro Tip</div><p>Reflect a window or lamp — doubled light completely transforms any room.</p></div>
+      </div>
+      <div class="card-footer">
+        <a class="cta-btn-outline" href="https://www.amazon.com/s?k=large+wall+mirror+arched+living+room+modern" target="_blank">Shop Now →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- WIDE CARD 09 -->
+  <div class="art-wide">
+    <div style="text-align:center;">
+      <div style="font-size:80px;margin-bottom:24px;">📷</div>
+      <a class="cta-btn" href="https://www.amazon.com/s?k=photography+art+print+large+framed+wall+decor" target="_blank">Shop Photography Prints →</a>
+    </div>
+    <div>
+      <div class="strip" style="background:linear-gradient(90deg,#7ab0d8,transparent);"></div>
+      <div class="tag-row"><span class="tag tag-gold">No. 09</span><span class="tag tag-blue">Fine Art Feel</span></div>
+      <h3>Photography Art Prints</h3>
+      <p style="color:var(--muted);font-size:14px;font-weight:300;margin-bottom:18px;line-height:1.8;">High-resolution photography prints — aerial landscapes, intimate street photography, architectural shots — bring a fine art sensibility at an accessible price point. Black and white photography in oversized frames is a perennial classic; moody color landscapes add dramatic depth.</p>
+      <div class="tip"><div class="tip-label">Pro Tip</div><p>Buy unframed prints in a tube and frame them locally — custom look at half the cost.</p></div>
+    </div>
+  </div>
+
+  <!-- 10 FEATURED LAST -->
+  <div class="art-featured">
+    <div class="text-side">
+      <div class="strip" style="background:linear-gradient(90deg,#e07898,transparent);"></div>
+      <div class="tag-row"><span class="tag tag-blue">Bold & Playful</span><span class="tag tag-green">Modern Edge</span></div>
+      <h2>Neon & LED Wall Signs</h2>
+      <p style="color:var(--muted);font-size:14.5px;font-weight:300;margin-bottom:18px;line-height:1.8;">Flexible LED neon signs have evolved far beyond novelty. Custom word signs, moon phases, palm trees, and abstract shapes in warm white, blush pink, or electric blue are having a major design moment in 2026. These make extraordinary focal points in eclectic and maximalist contemporary spaces.</p>
+      <div class="tip"><div class="tip-label">Pro Tip</div><p>Keep everything else on that wall minimal — the sign needs breathing room to truly shine.</p></div>
+      <a class="cta-btn" href="https://www.amazon.com/s?k=neon+led+wall+sign+living+room+modern+decor" target="_blank">Shop on Amazon →</a>
+    </div>
+    <div class="img-side">
+      <div class="big-num">10</div>
+      <div class="num-badge">No. 10 · Trending</div>
+      <div class="art-icon">💡</div>
+      <div style="font-family:'Playfair Display',serif;font-size:22px;font-style:italic;color:rgba(255,255,255,0.5);position:relative;z-index:2;">LED Neon Signs</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- CLOSING CTA -->
+<div class="closing">
+  <div class="closing-inner">
+    <h2>Ready to <em>Transform</em> Your Walls?</h2>
+    <p>The best wall art is the one that makes you feel something every time you walk into the room. Start with one statement piece and build from there.</p>
+    <div class="closing-btns">
+      <a class="cta-btn" href="https://www.amazon.com/s?k=modern+wall+art+living+room" target="_blank">Browse All Wall Art on Amazon →</a>
+      <a class="cta-btn-outline" href="https://www.amazon.com/s?k=wall+art+bestseller+home+decor" target="_blank">View Bestsellers</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Wall Art Guide · <span>All Amazon links are affiliate-ready</span> · Curated for modern interiors</p>
+</footer>
+
+</body>
+</html>
